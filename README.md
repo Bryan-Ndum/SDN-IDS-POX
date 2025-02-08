@@ -10,7 +10,7 @@ This project implements an Intrusion Detection System (IDS) for Software-Defined
 
 ⚡ Installation & Setup
 
-Step 1: 
+**Step 1:** 
 Clone the Repository
 
 COPY THIS
