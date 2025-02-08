@@ -12,7 +12,7 @@ This project implements an Intrusion Detection System (IDS) for Software-Defined
 Step 1: Clone the Repository
 
 COPY THIS
-git clone https://github.com/YOUR-USERNAME/SDN-IDS-POX.git
+git clone https://github.com/Bryan-Ndum/SDN-IDS-POX.git
 cd SDN-IDS-POX
 
 Step 2: Install Dependencies
