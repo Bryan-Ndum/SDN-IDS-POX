@@ -12,6 +12,7 @@ This project implements an Intrusion Detection System (IDS) for Software-Defined
 Step 1: Clone the Repository
 
 COPY THIS
+
 git clone https://github.com/Bryan-Ndum/SDN-IDS-POX.git
 cd SDN-IDS-POX
 
@@ -19,12 +20,14 @@ Step 2: Install Dependencies
 Ensure Python 3 is installed, then install required dependencies.
 
 COPY THIS
+
 sudo apt update
 sudo apt install python3-pip
 
 Step 3: Install POX Controller
 
 COPY THIS AND PASTE IN A SEPERATE TERMINAL
+
 git clone https://github.com/noxrepo/pox.git
 cd pox
 ./pox.py forwarding.l2_learning
@@ -40,12 +43,14 @@ cd ../SDN-IDS-POX
 Run the IDS:
 
 COPY THIS
+
 ./pox.py ids_pox
 🔧 Running with Mininet
 
 To test your IDS, start a Mininet topology: (OPEN A NEW TERMINAL)
 
 COPY THIS
+
 sudo mn --topo single,3 --controller remote
 This creates a simple 3-host topology and connects it to the remote POX controller.
 
@@ -65,6 +70,7 @@ Packet Rate=150, Byte Rate=2000000
 Modify the threshold values in ids_pox.py to suit your needs:
 
 python
+
 COPY THIS
 
 THRESHOLD_PACKET_RATE = 100  # Packets per second
