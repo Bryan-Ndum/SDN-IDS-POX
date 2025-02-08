@@ -15,6 +15,7 @@ Step 1: Clone the Repository
 COPY THIS
 
 git clone https://github.com/Bryan-Ndum/SDN-IDS-POX.git
+
 cd SDN-IDS-POX
 
 Step 2: Install Dependencies
@@ -23,6 +24,7 @@ Ensure Python 3 is installed, then install required dependencies.
 COPY THIS
 
 sudo apt update
+
 sudo apt install python3-pip
 
 Step 3: Install POX Controller
@@ -30,7 +32,9 @@ Step 3: Install POX Controller
 COPY THIS AND PASTE IN A SEPERATE TERMINAL
 
 git clone https://github.com/noxrepo/pox.git
+
 cd pox
+
 ./pox.py forwarding.l2_learning
 
 
@@ -46,6 +50,7 @@ Run the IDS:
 COPY THIS
 
 ./pox.py ids_pox
+
 🔧 Running with Mininet
 
 To test your IDS, start a Mininet topology: (OPEN A NEW TERMINAL)
@@ -53,6 +58,7 @@ To test your IDS, start a Mininet topology: (OPEN A NEW TERMINAL)
 COPY THIS
 
 sudo mn --topo single,3 --controller remote
+
 This creates a simple 3-host topology and connects it to the remote POX controller.
 
 🛠 How It Works
@@ -64,9 +70,10 @@ The IDS uses threading to continuously monitor and detect anomalies.
 
 🚨 Example Log Output (Anomaly Detected)
 
-COPY THIS
 WARNING: Anomaly detected for flow (00:00:00:00:00:01, 00:00:00:00:00:02):
+
 Packet Rate=150, Byte Rate=2000000
+
 📝 Configuration
 Modify the threshold values in ids_pox.py to suit your needs:
 
@@ -75,20 +82,26 @@ python
 COPY THIS
 
 THRESHOLD_PACKET_RATE = 100  # Packets per second
+
 THRESHOLD_BYTE_RATE = 1000000  # Bytes per second
+
 You can increase or decrease these values based on network activity.
 
 💡 Future Improvements
+
 🚀 Implement Machine Learning-based Anomaly Detection
 🚀 Support for Signature-Based Attack Detection
 🚀 Enhanced Logging & Reporting Mechanism
 
 📜 License
+
 This project is licensed under the MIT License.
 
 🤝 Contributing
+
 Want to improve this project? Feel free to fork it, open an issue, or submit a pull request! 🎯
 
 📬 Contact
+
 For any queries, reach out via GitHub Issues or email me
 
