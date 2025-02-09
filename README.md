@@ -1,12 +1,20 @@
 SDN IDS using POX
+
 This project implements an Intrusion Detection System (IDS) for Software-Defined Networking (SDN) using the POX controller. It monitors network traffic, detects anomalies, and logs suspicious activities.
 
-📌 Features
+**📌 Features**
+
 ✔️ Monitors network flows in SDN
+
 ✔️ Detects anomalous traffic patterns based on predefined thresholds
+
 ✔️ Logs suspicious traffic flows for further analysis
+
 ✔️ Integrates with Mininet and POX for real-time monitoring
+
 ✔️ Customizable thresholds for packet and byte rate monitoring
+
+
 
 **⚡ Installation & Setup**
 
